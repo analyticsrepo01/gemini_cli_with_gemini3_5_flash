@@ -56,6 +56,37 @@ If your development environment is in a secure, air-gapped subnet without direct
 *   **Linux (x64):** [agy-linux-x64-v1.0.9.zip](agy-linux-x64-v1.0.9.zip) or [agy-linux-x64-v1.0.9.tar.gz](agy-linux-x64-v1.0.9.tar.gz)
 *   **Windows (x64):** [agy-windows-x64-v1.0.9.zip](agy-windows-x64-v1.0.9.zip)
 
+#### 🐧 Offline Installation on Linux
+1. Download the `agy-linux-x64-v1.0.9.zip` file.
+2. Extract the binary from the archive:
+   ```bash
+   unzip agy-linux-x64-v1.0.9.zip
+   ```
+3. Move the binary into a location in your active `$PATH` (e.g. `~/.local/bin`):
+   ```bash
+   mkdir -p ~/.local/bin
+   mv antigravity ~/.local/bin/agy
+   ```
+4. Ensure executable permissions:
+   ```bash
+   chmod +x ~/.local/bin/agy
+   ```
+5. Run the native environment setup to configure your shell profile:
+   ```bash
+   agy install
+   ```
+
+#### 🪟 Offline Installation on Windows
+1. Download the `agy-windows-x64-v1.0.9.zip` file.
+2. Open PowerShell and extract the executable directly to your local application directory:
+   ```powershell
+   Expand-Archive -Path agy-windows-x64-v1.0.9.zip -DestinationPath $env:LOCALAPPDATA\agy\bin -Force
+   ```
+3. Run the installer trigger to configure your environment paths automatically:
+   ```powershell
+   & "$env:LOCALAPPDATA\agy\bin\agy.exe" install
+   ```
+
 ---
 
 ## 🔑 Step 2: Authentication Configurations
