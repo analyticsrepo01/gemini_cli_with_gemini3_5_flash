@@ -30,6 +30,34 @@ $ gemini --version
 
 ---
 
+## 🚀 Antigravity CLI Installation
+
+Work with Antigravity directly in your codebase. Build, debug, and ship from your terminal. Describe what you need, and Antigravity handles the rest.
+
+### 🌐 Quick Install Commands
+
+#### 🍎 macOS / 🐧 Linux
+```bash
+curl -fsSL https://antigravity.google/cli/install.sh | bash
+```
+
+#### 🪟 Windows PowerShell
+```powershell
+irm https://antigravity.google/cli/install.ps1 | iex
+```
+
+#### 🪟 Windows CMD
+```cmd
+curl -fsSL https://antigravity.google/cli/install.cmd -o install.cmd && install.cmd && del install.cmd
+```
+
+### 📦 Offline Packages (v1.0.9)
+If your development environment is in a secure, air-gapped subnet without direct access to external installer endpoints, you can download the offline installer archives directly from this repository:
+*   **Linux (x64):** [agy-linux-x64-v1.0.9.zip](agy-linux-x64-v1.0.9.zip) or [agy-linux-x64-v1.0.9.tar.gz](agy-linux-x64-v1.0.9.tar.gz)
+*   **Windows (x64):** [agy-windows-x64-v1.0.9.zip](agy-windows-x64-v1.0.9.zip)
+
+---
+
 ## 🔑 Step 2: Authentication Configurations
 The Gemini CLI supports two primary authentication models. Choosing the correct one determines which API endpoints and models are available to you.
 
